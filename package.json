@@ -1,0 +1,26 @@
+{
+  "name": "altered-carbon",
+  "author": "Unai Navarro",
+  "displayName": "Altered Carbon",
+  "description": "Altered Carbon es un tema oscuro para Visual Studio Code inspirado en el elegante y minimalista esquema de colores del tema Carbon de IntelliJ IDEA. Su objetivo es ofrecer una experiencia de desarrollo limpia, moderna y agradable a la vista, con una paleta de colores sobria y contrastes suaves que no cansan la vista.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Altered Carbon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Altered Carbon-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unainavarro/altered-carbon-theme"
+  }
+}
