@@ -58,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Download button simulation
   const downloadBtn = document.getElementById("downloadBtn");
   downloadBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    // Simulate download (in a real app, this would link to the actual file)
+    //  e.preventDefault();
     this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Descargando...';
     setTimeout(() => {
       this.innerHTML = '<i class="fas fa-check"></i> Descargado';
