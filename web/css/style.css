@@ -1,0 +1,6 @@
+@import url(base/variables.css);
+@import url(base/globals.css);
+
+@import url(components/main.css);
+@import url(components/carrusel.css);
+@import url(components/footer.css);

@@ -1,0 +1,91 @@
+.footer {
+  order: 3;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.compatible-text {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: rgba(186, 200, 203, 0.7);
+}
+
+.ide-img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+/* Efecto de marquee para los IDEs */
+.ide-marquee-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-text-primary) 10%,
+    var(--color-text-primary) 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-text-primary) 10%,
+    var(--color-text-primary) 90%,
+    transparent 100%
+  );
+}
+
+.ide-marquee {
+  display: flex;
+  width: max-content;
+  animation: ide-marquee 20s linear infinite;
+  will-change: transform;
+}
+
+.ide-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0 1.5rem;
+  flex-shrink: 0;
+}
+
+.ide-item i {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+@keyframes ide-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ide-marquee-container:hover .ide-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ide-marquee {
+    animation: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ide-marquee-container {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .ide-item {
+    padding: 0 0.75rem;
+  }
+}
